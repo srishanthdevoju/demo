@@ -1,0 +1,71 @@
+{
+  "document_id": "6f9dbb21-ca12-4615-9690-aafd5e6c602d",
+  "summary": {
+    "main_summary": "This Non-Disclosure Agreement (NDA) is entered into by and between the Disclosing Party and the Receiving Party to prevent the unauthorized disclosure of Confidential Information. The agreement outlines the terms and conditions for the disclosure and use of Confidential Information.",
+    "tldr": "This Non-Disclosure Agreement (NDA) is entered into by and between the Disclosing Party and the Receiving Party to prevent the unauthorized disclosure of Confidential Information.",
+    "key_points": [
+      "Definition and protection of Confidential Information",
+      "Exclusions from Confidential Information",
+      "Obligations of the Receiving Party",
+      "Time periods for confidentiality",
+      "Relationships and severability"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Unauthorized Disclosure",
+      "description": "The Receiving Party may disclose Confidential Information without the prior written approval of the Disclosing Party, which could result in significant harm to the Disclosing Party's business.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Breach of Confidentiality",
+      "description": "The Receiving Party may fail to maintain the confidentiality of Confidential Information, which could result in the loss of trade secrets or other proprietary information.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    },
+    {
+      "title": "Litigation",
+      "description": "The parties may engage in litigation if there is a dispute over the disclosure or use of Confidential Information, which could result in significant legal fees and damages.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Definition of Confidential Information",
+        "content": "For purposes of this Agreement, 'Confidential Information' shall include all information or material that has or could have commercial value or other utility in the business in which Disclosing Party is engaged.",
+        "type": "Standard"
+      },
+      {
+        "title": "Exclusions from Confidential Information",
+        "content": "Receiving Party's obligations under this Agreement do not extend to information that is: (a) publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party; (b) discovered or created by the Receiving Party before disclosure by Disclosing Party; (c) learned by the Receiving Party through legitimate means other than from the Disclosing Party or Disclosing Party's representatives; or (d) is disclosed by Receiving Party with Disclosing Party's prior written approval.",
+        "type": "Standard"
+      },
+      {
+        "title": "Obligations of Receiving Party",
+        "content": "Receiving Party shall hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": [
+      {
+        "title": "Notice of Immunity",
+        "content": "Employee is provided notice that an individual shall not be held criminally or civilly liable under any federal or state trade secret law for the disclosure of a trade secret that is made (i) in confidence to a federal, state, or local government official, either directly or indirectly, or to an attorney; and (ii) solely for the purpose of reporting or investigating a suspected violation of law;",
+        "type": "Non-Standard"
+      }
+    ]
+  },
+  "metadata": {
+    "document_type": "Non-Disclosure Agreement",
+    "parties": [
+      "Disclosing Party",
+      "Receiving Party"
+    ],
+    "effective_date": "Unknown"
+  }
+}

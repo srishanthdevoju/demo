@@ -1,0 +1,58 @@
+{
+  "document_id": "c6fdf5dc-f2c7-4f56-bfee-eff28680e68b",
+  "summary": {
+    "main_summary": "This is an application form for a Community and Birth Certificate (Caste) in the state of Telangana, India. The main purpose of this agreement is to provide a formal application for individuals to obtain a caste certificate, which is a crucial document for various purposes such as education, employment, and government benefits.",
+    "tldr": "This is an application form for a Community and Birth Certificate (Caste) in the state of Telangana, India.",
+    "key_points": [
+      "Application for Community and Birth Certificate (Caste)",
+      "Requires various documents such as proof of address, proof of caste, and proof of identity",
+      "To be submitted to the Tahsildar of the respective Mandal"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Document Verification",
+      "description": "The application requires submission of various documents, which may be subject to verification. Failure to provide genuine documents or discrepancies in the documents may lead to rejection of the application or legal consequences.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Inaccurate or Incomplete Information",
+      "description": "Providing inaccurate or incomplete information in the application form may lead to rejection or delay in processing, which can have significant consequences for the applicant, including denial of benefits or services.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    },
+    {
+      "title": "Data Privacy",
+      "description": "The application form collects sensitive personal information, including address, mobile number, and Aadhaar number. There is a risk of data breach or unauthorized use of this information, which can have serious consequences for the applicant.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Submission of Documents",
+        "content": "The applicant is required to submit various documents, including proof of address, proof of caste, and proof of identity, along with the application form.",
+        "type": "Standard"
+      },
+      {
+        "title": "Verification of Information",
+        "content": "The information provided in the application form is subject to verification, and the applicant may be required to provide additional documents or information to support their claim.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": []
+  },
+  "metadata": {
+    "document_type": "Application Form for Community and Birth Certificate (Caste)",
+    "parties": [
+      "Government of Telangana",
+      "Applicant"
+    ],
+    "effective_date": "Unknown"
+  }
+}

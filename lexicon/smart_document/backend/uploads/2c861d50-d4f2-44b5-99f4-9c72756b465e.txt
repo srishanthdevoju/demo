@@ -1,0 +1,9 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+
+This Mutual Non-Disclosure Agreement (the "Agreement") is entered into as of June 17, 2026, by and between:
+Disclosing Party: Acme Corporation, with its principal place of business at 123 Main St, Anytown, USA.
+Receiving Party: Beta Industries, with its principal place of business at 456 Oak Ave, Othertown, USA.
+
+1. Purpose: The parties wish to explore a potential business relationship (the "Relationship").
+2. Confidential Information: "Confidential Information" means any proprietary information disclosed by the Disclosing Party to the Receiving Party.
+3. Term: The Receiving Party's obligations under this Agreement shall survive for a period of five (5) years from the date of disclosure.

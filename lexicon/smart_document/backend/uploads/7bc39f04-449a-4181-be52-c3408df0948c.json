@@ -1,0 +1,57 @@
+{
+  "document_id": "7bc39f04-449a-4181-be52-c3408df0948c",
+  "summary": {
+    "main_summary": "This is an application form for a Community and Birth Certificate (Caste) in the state of Telangana, India. The main purpose of this agreement is to provide a formal application for individuals to obtain a caste certificate, which is a crucial document for various purposes such as education, employment, and government benefits.",
+    "tldr": "This is an application form for a Community and Birth Certificate (Caste) in the state of Telangana, India.",
+    "key_points": [
+      "Application for Community and Birth Certificate (Caste)",
+      "Requires various documents such as proof of address, proof of caste, and proof of identity"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Inaccurate Information",
+      "description": "Providing inaccurate or false information in the application form may lead to rejection or cancellation of the certificate, and may also result in legal consequences.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Loss of Documents",
+      "description": "Loss or misplacement of required documents such as proof of address, proof of caste, and proof of identity may delay or hinder the application process.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    },
+    {
+      "title": "Incomplete Application",
+      "description": "Failing to provide all required documents or information may result in the application being rejected or delayed.",
+      "severity": "Low",
+      "severity_weight": 1,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Documentation Requirements",
+        "content": "The application requires various documents such as proof of address, proof of caste, and proof of identity.",
+        "type": "Standard"
+      },
+      {
+        "title": "Application Process",
+        "content": "The application must be submitted to the Tahsildar of the respective Mandal, along with all required documents.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": []
+  },
+  "metadata": {
+    "document_type": "Application Form for Community and Birth Certificate (Caste)",
+    "parties": [
+      "Government of Telangana",
+      "Applicant"
+    ],
+    "effective_date": "Unknown"
+  }
+}

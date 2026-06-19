@@ -1,0 +1,50 @@
+{
+  "document_id": "2c861d50-d4f2-44b5-99f4-9c72756b465e",
+  "summary": {
+    "main_summary": "This Mutual Non-Disclosure Agreement is between Acme Corporation and Beta Industries to facilitate the exploration of a potential business relationship while protecting each party's confidential information.",
+    "tldr": "This Mutual Non-Disclosure Agreement is between Acme Corporation and Beta Industries to facilitate the exploration of a potential business relationship while protecting each party's confidential information.",
+    "key_points": [
+      "Exploration of a potential business relationship",
+      "Protection of confidential information"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Breach of Confidentiality",
+      "description": "If either party fails to maintain the confidentiality of the other party's proprietary information, it could lead to significant financial and reputational damage.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Unauthorized Disclosure",
+      "description": "The Receiving Party's obligations to protect Confidential Information may be compromised if its employees or agents disclose such information without authorization.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Confidential Information",
+        "content": "\"Confidential Information\" means any proprietary information disclosed by the Disclosing Party to the Receiving Party.",
+        "type": "Standard"
+      },
+      {
+        "title": "Term",
+        "content": "The Receiving Party's obligations under this Agreement shall survive for a period of five (5) years from the date of disclosure.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": []
+  },
+  "metadata": {
+    "document_type": "Mutual Non-Disclosure Agreement",
+    "parties": [
+      "Acme Corporation",
+      "Beta Industries"
+    ],
+    "effective_date": "2026-06-17"
+  }
+}

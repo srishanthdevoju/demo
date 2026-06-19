@@ -1,0 +1,63 @@
+{
+  "document_id": "3d59804c-f904-411b-855e-68d3b0d33414",
+  "summary": {
+    "main_summary": "This is an application form for a Community and Birth Certificate (Caste) in the state of Telangana, India. The main purpose of this agreement is to provide a certificate of caste to the applicant, which can be used for various purposes such as education, employment, and government benefits.",
+    "tldr": "This is an application form for a Community and Birth Certificate (Caste) in the state of Telangana, India.",
+    "key_points": [
+      "Application for Community and Birth Certificate (Caste)",
+      "Requires proof of address, caste, and identity",
+      "To be submitted to the Tahsildar of the respective Mandal"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Certificate Misuse",
+      "description": "The certificate may be misused for fraudulent purposes, such as obtaining benefits or advantages to which the applicant is not entitled.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Inaccurate Information",
+      "description": "Providing inaccurate or false information in the application form may lead to rejection or cancellation of the certificate, and may also result in legal consequences.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    },
+    {
+      "title": "Loss of Documents",
+      "description": "Loss or misplacement of the required documents, such as proof of address, caste, and identity, may delay or prevent the issuance of the certificate.",
+      "severity": "Low",
+      "severity_weight": 1,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Application Requirements",
+        "content": "The applicant must provide proof of address, caste, and identity, and must fill out the application form accurately and completely.",
+        "type": "Standard"
+      },
+      {
+        "title": "Certificate Issuance",
+        "content": "The certificate will be issued to the applicant after verification of the documents and information provided.",
+        "type": "Standard"
+      },
+      {
+        "title": "Cancellation or Rejection",
+        "content": "The certificate may be cancelled or rejected if the applicant provides inaccurate or false information, or if the documents provided are insufficient or invalid.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": []
+  },
+  "metadata": {
+    "document_type": "Application Form for Community and Birth Certificate (Caste)",
+    "parties": [
+      "Government of Telangana",
+      "Applicant"
+    ],
+    "effective_date": "Unknown"
+  }
+}

@@ -1,1 +1,0 @@
-# Smart-Legal-Document-Analyzer

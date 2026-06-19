@@ -1,0 +1,71 @@
+SERVICE AGREEMENT
+Effective Date: January 1, 2026
+This Service Agreement ("Agreement") is entered into between:
+ABC Technologies Pvt. Ltd., having its registered office at Hyderabad, Telangana, India ("Service Provider")
+AND
+XYZ Retail Solutions Ltd., having its registered office at Bengaluru, Karnataka, India ("Client").
+1. Scope of Services
+The Service Provider agrees to provide software development, maintenance, and technical support services
+to the Client as described in Appendix A.
+2. Term
+This Agreement shall commence on January 1, 2026, and shall remain in effect for a period of twelve (12)
+months unless terminated earlier in accordance with this Agreement.
+3. Payment Terms
+The Client shall pay the Service Provider INR 5,00,000 per month for the services rendered.
+Invoices shall be submitted on the first day of each month and shall be paid within thirty (30) days of
+receipt.
+Late payments may incur interest at a rate of 2% per month.
+4. Confidentiality
+Both parties agree to maintain the confidentiality of all proprietary, confidential, and trade secret
+information disclosed during the term of this Agreement.
+Neither party shall disclose such information to any third party without prior written consent from the other
+party.
+1
+
+The confidentiality obligations shall survive for three (3) years after termination of this Agreement.
+5. Intellectual Property
+All intellectual property developed by the Service Provider specifically for the Client under this Agreement
+shall become the sole property of the Client upon full payment.
+The Service Provider retains ownership of all pre-existing intellectual property.
+6. Limitation of Liability
+Except for gross negligence or willful misconduct, neither party shall be liable for indirect, incidental,
+special, or consequential damages.
+The total liability of either party under this Agreement shall not exceed the total fees paid by the Client
+during the previous six months.
+7. Indemnification
+The Service Provider agrees to indemnify and hold harmless the Client from any third-party claims arising
+from infringement of intellectual property rights.
+The Client agrees to indemnify the Service Provider against claims arising from misuse of the delivered
+software.
+8. Data Protection
+Both parties shall comply with all applicable data protection and privacy laws.
+Personal information shall be processed only for purposes necessary to perform obligations under this
+Agreement.
+9. Termination
+Either party may terminate this Agreement by providing thirty (30) days written notice to the other party.
+Either party may terminate immediately in the event of a material breach that remains uncured for fifteen
+(15) days after written notice.
+2
+
+10. Force Majeure
+Neither party shall be liable for delays or failures caused by events beyond reasonable control, including
+natural disasters, war, strikes, or government actions.
+11. Governing Law
+This Agreement shall be governed by and construed in accordance with the laws of India.
+Any disputes arising under this Agreement shall be subject to the exclusive jurisdiction of the courts located
+in Hyderabad, Telangana.
+12. Notices
+All notices required under this Agreement shall be in writing and delivered by email or registered post to
+the addresses specified by each party.
+13. Entire Agreement
+This Agreement constitutes the entire agreement between the parties and supersedes all prior discussions,
+negotiations, and understandings.
+Service Provider
+ABC Technologies Pvt. Ltd.
+Authorized Signatory: _______
+Date: _______
+Client
+XYZ Retail Solutions Ltd.
+Authorized Signatory: _______
+Date: _______
+3

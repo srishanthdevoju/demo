@@ -1,0 +1,55 @@
+{
+  "document_id": "64459c16-d4f7-4ecd-b1e4-cf6a1bb61828",
+  "summary": {
+    "main_summary": "This is a Confidentiality Agreement between Juris Precision Systems Inc. and Creative Studio, outlining the terms for handling confidential information and payment.",
+    "tldr": "This is a Confidentiality Agreement between Juris Precision Systems Inc.",
+    "key_points": [
+      "Confidential Information includes proprietary data shared between the parties",
+      "Invoices must be paid within 30 days of receipt"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Confidentiality Breach",
+      "description": "Unauthorized disclosure of confidential information may result in legal action and damage to the parties' reputation.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Non-Payment Risk",
+      "description": "Failure to pay invoices within 30 days may lead to penalties or termination of the agreement.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Confidential Information",
+        "content": "Confidential Information refers to any proprietary data shared between the parties.",
+        "type": "Standard"
+      },
+      {
+        "title": "Payment Terms",
+        "content": "All invoices must be paid within 30 days of receipt.",
+        "type": "Standard"
+      },
+      {
+        "title": "Governing Law",
+        "content": "This agreement shall be governed by the laws of the State of Delaware.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": []
+  },
+  "metadata": {
+    "document_type": "Confidentiality Agreement",
+    "parties": [
+      "Juris Precision Systems Inc.",
+      "Creative Studio"
+    ],
+    "effective_date": "Unknown"
+  }
+}

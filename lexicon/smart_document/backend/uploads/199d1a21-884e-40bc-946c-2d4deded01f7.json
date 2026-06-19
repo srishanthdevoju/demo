@@ -1,0 +1,64 @@
+{
+  "document_id": "199d1a21-884e-40bc-946c-2d4deded01f7",
+  "summary": {
+    "main_summary": "This Service Agreement is between ABC Technologies Pvt. Ltd. (Service Provider) and XYZ Retail Solutions Ltd. (Client) for software development, maintenance, and technical support services. The agreement outlines the scope of services, payment terms, confidentiality, intellectual property, limitation of liability, indemnification, data protection, termination, force majeure, governing law, notices, and entire agreement.",
+    "tldr": "This Service Agreement is between ABC Technologies Pvt.",
+    "key_points": [
+      "Software development, maintenance, and technical support services",
+      "Confidentiality and intellectual property protection",
+      "Payment terms and limitation of liability",
+      "Termination and force majeure clauses"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Intellectual Property Infringement",
+      "description": "The Service Provider may be liable for intellectual property infringement claims arising from the services provided, which could result in significant financial losses.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Data Breach",
+      "description": "Both parties may be at risk of data breaches, which could compromise sensitive information and result in reputational damage and financial losses.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    },
+    {
+      "title": "Payment Disputes",
+      "description": "Disputes over payment terms and late payments may arise, which could impact the Service Provider's cash flow and the Client's ability to receive services.",
+      "severity": "Low",
+      "severity_weight": 1,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Confidentiality",
+        "content": "Both parties agree to maintain the confidentiality of all proprietary, confidential, and trade secret information disclosed during the term of this Agreement.",
+        "type": "Standard"
+      },
+      {
+        "title": "Limitation of Liability",
+        "content": "Except for gross negligence or willful misconduct, neither party shall be liable for indirect, incidental, special, or consequential damages.",
+        "type": "Standard"
+      },
+      {
+        "title": "Indemnification",
+        "content": "The Service Provider agrees to indemnify and hold harmless the Client from any third-party claims arising from infringement of intellectual property rights.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": []
+  },
+  "metadata": {
+    "document_type": "Service Agreement",
+    "parties": [
+      "ABC Technologies Pvt. Ltd.",
+      "XYZ Retail Solutions Ltd."
+    ],
+    "effective_date": "2026-01-01"
+  }
+}

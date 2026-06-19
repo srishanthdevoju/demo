@@ -1,0 +1,75 @@
+{
+  "document_id": "7288e90d-e97d-4994-90c5-5b1da75deee3",
+  "summary": {
+    "main_summary": "This Service Agreement outlines the terms and conditions for the provision of software development, maintenance, and technical support services by ABC Technologies Pvt. Ltd. to XYZ Retail Solutions Ltd.",
+    "tldr": "This Service Agreement outlines the terms and conditions for the provision of software development, maintenance, and technical support services by ABC Technologies Pvt.",
+    "key_points": [
+      "Scope of services includes software development, maintenance, and technical support",
+      "Term of the agreement is 12 months with a monthly payment of INR 5,00,000",
+      "Confidentiality obligations survive for 3 years after termination"
+    ]
+  },
+  "risks": [
+    {
+      "title": "Intellectual Property Infringement",
+      "description": "The Service Provider may be liable for intellectual property infringement claims, which could result in significant financial damages.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Data Protection Non-Compliance",
+      "description": "Failure to comply with applicable data protection and privacy laws could result in regulatory penalties and reputational damage.",
+      "severity": "High",
+      "severity_weight": 3,
+      "is_critical": true
+    },
+    {
+      "title": "Late Payment",
+      "description": "Late payments may incur interest at a rate of 2% per month, which could lead to additional financial burdens on the Client.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    },
+    {
+      "title": "Termination Due to Material Breach",
+      "description": "Either party may terminate the agreement immediately in the event of a material breach, which could disrupt business operations and lead to financial losses.",
+      "severity": "Medium",
+      "severity_weight": 2,
+      "is_critical": false
+    }
+  ],
+  "clauses": {
+    "standard_clauses": [
+      {
+        "title": "Confidentiality",
+        "content": "Both parties agree to maintain the confidentiality of all proprietary, confidential, and trade secret information disclosed during the term of this Agreement.",
+        "type": "Standard"
+      },
+      {
+        "title": "Limitation of Liability",
+        "content": "Except for gross negligence or willful misconduct, neither party shall be liable for indirect, incidental, special, or consequential damages.",
+        "type": "Standard"
+      },
+      {
+        "title": "Indemnification",
+        "content": "The Service Provider agrees to indemnify and hold harmless the Client from any third-party claims arising from infringement of intellectual property rights.",
+        "type": "Standard"
+      },
+      {
+        "title": "Force Majeure",
+        "content": "Neither party shall be liable for delays or failures caused by events beyond reasonable control, including natural disasters, war, strikes, or government actions.",
+        "type": "Standard"
+      }
+    ],
+    "non_standard_clauses": []
+  },
+  "metadata": {
+    "document_type": "Service Agreement",
+    "parties": [
+      "ABC Technologies Pvt. Ltd.",
+      "XYZ Retail Solutions Ltd."
+    ],
+    "effective_date": "2026-01-01"
+  }
+}
