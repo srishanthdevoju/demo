@@ -177,19 +177,46 @@ export default function Shell({ children }) {
       
       if (!matchingVoice) {
         try {
-          const sentences = cleanText.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) || [cleanText];
+          // Robust Telugu sentence-to-chunk parser ensuring all chunks are <= 180 characters
+          const sentences = cleanText.match(/[^.!?\n]+[.!?\n]+(\s|$)|[^.!?\n]+$/g) || [cleanText];
           const chunks = [];
           let currentChunk = "";
+
+          const addChunk = (text) => {
+            text = text.trim();
+            if (!text) return;
+            if (text.length <= 180) {
+              chunks.push(text);
+            } else {
+              // Split long sentences by words to avoid exceeding API limits
+              const words = text.split(/\s+/);
+              let subChunk = "";
+              for (const word of words) {
+                if ((subChunk + " " + word).trim().length > 180) {
+                  if (subChunk) chunks.push(subChunk.trim());
+                  subChunk = word;
+                } else {
+                  subChunk += (subChunk ? " " : "") + word;
+                }
+              }
+              if (subChunk) {
+                chunks.push(subChunk.trim());
+              }
+            }
+          };
+
           for (const sentence of sentences) {
-            if ((currentChunk + sentence).length > 180) {
-              if (currentChunk) chunks.push(currentChunk.trim());
+            if ((currentChunk + " " + sentence).trim().length > 180) {
+              if (currentChunk) {
+                addChunk(currentChunk);
+              }
               currentChunk = sentence;
             } else {
               currentChunk += (currentChunk ? " " : "") + sentence;
             }
           }
           if (currentChunk) {
-            chunks.push(currentChunk.trim());
+            addChunk(currentChunk);
           }
 
           if (chunks.length === 0) return;
@@ -202,14 +229,16 @@ export default function Shell({ children }) {
               return;
             }
             const chunkText = chunks[chunkIndex];
-            const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(chunkText)}&tl=te&client=tw-ob`;
+            // Use translate.googleapis.com with client=gtx to avoid CORS/Forbidden errors
+            const url = `https://translate.googleapis.com/translate_tts?client=gtx&tl=te&ie=UTF-8&q=${encodeURIComponent(chunkText)}`;
             const audio = new Audio(url);
             window.activeFallbackAudio = audio;
             audio.onended = () => {
               chunkIndex++;
               playNextChunk();
             };
-            audio.onerror = () => {
+            audio.onerror = (e) => {
+              console.error("Audio playback error:", e);
               setSpeakingMsgIdx(null);
               window.activeFallbackAudio = null;
             };
