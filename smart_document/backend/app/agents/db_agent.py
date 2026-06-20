@@ -869,8 +869,6 @@ class DBAgent:
                 except Exception:
                     pass
             return False
-=======
->>>>>>> origin/main
 
     async def get_lawyers(self) -> list:
         """Fetches all registered lawyers from public.lawyers."""
