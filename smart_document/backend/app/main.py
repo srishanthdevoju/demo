@@ -1113,8 +1113,8 @@ async def create_payment_order(appointment_id: int):
     amount_paise = int(fee * 100)
     
     # Get Razorpay credentials from environment
-    razorpay_key_id = os.getenv("RAZORPAY_KEY_ID") or os.getenv("Test Key ID")
-    razorpay_key_secret = os.getenv("RAZORPAY_KEY_SECRET") or os.getenv("Test Key Secret")
+    razorpay_key_id = os.getenv("RAZORPAY_KEY_ID") or os.getenv("Test Key ID") or "rzp_test_T3kbOWjN6XNT4w"
+    razorpay_key_secret = os.getenv("RAZORPAY_KEY_SECRET") or os.getenv("Test Key Secret") or "mrG2DW1dubznFfdqF0NJEygU"
     
     if not razorpay_key_id or not razorpay_key_secret:
          raise HTTPException(status_code=500, detail="Razorpay credentials not configured on backend.")
@@ -1175,7 +1175,7 @@ async def verify_payment(req: PaymentVerifyRequest):
     db_agent = DBAgent()
     
     # Get Razorpay credentials
-    razorpay_key_secret = os.getenv("RAZORPAY_KEY_SECRET") or os.getenv("Test Key Secret")
+    razorpay_key_secret = os.getenv("RAZORPAY_KEY_SECRET") or os.getenv("Test Key Secret") or "mrG2DW1dubznFfdqF0NJEygU"
     if not razorpay_key_secret:
          raise HTTPException(status_code=500, detail="Razorpay credentials not configured on backend.")
          
