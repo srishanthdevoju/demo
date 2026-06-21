@@ -15,6 +15,160 @@ import {
   VolumeX
 } from "lucide-react";
 
+const renderFormattedContent = (content) => {
+  if (!content) return null;
+  
+  const lines = content.split('\n');
+  const elements = [];
+  
+  let inCodeBlock = false;
+  let codeBlockLines = [];
+  let codeLanguage = '';
+  
+  const renderInlineFormatting = (text) => {
+    // 1. Process inline code `code`
+    const codeParts = text.split(/(`[^`]+`)/g);
+    return codeParts.flatMap((cp, cpIdx) => {
+      if (cp.startsWith('`') && cp.endsWith('`')) {
+        return (
+          <code key={`code-${cpIdx}`} className="bg-slate-100 text-risk-red px-1.5 py-0.5 rounded font-mono text-[11px] border border-slate-200">
+            {cp.slice(1, -1)}
+          </code>
+        );
+      }
+      
+      // 2. Process bold **bold**
+      const boldParts = cp.split(/(\*\*.*?\*\*)/g);
+      return boldParts.flatMap((bp, bpIdx) => {
+        if (bp.startsWith('**') && bp.endsWith('**')) {
+          return (
+            <strong key={`bold-${bpIdx}`} className="font-bold">
+              {bp.slice(2, -2)}
+            </strong>
+          );
+        }
+        
+        // 3. Process italic *italic* or _italic_
+        const italicParts = bp.split(/(\*.*?\*|_.*?_)/g);
+        return italicParts.map((ip, ipIdx) => {
+          if ((ip.startsWith('*') && ip.endsWith('*')) || (ip.startsWith('_') && ip.endsWith('_'))) {
+            return (
+              <em key={`italic-${ipIdx}`} className="italic opacity-90">
+                {ip.slice(1, -1)}
+              </em>
+            );
+          }
+          return ip;
+        });
+      });
+    });
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    
+    // Check for code block boundary
+    if (line.trim().startsWith('```')) {
+      if (inCodeBlock) {
+        const codeText = codeBlockLines.join('\n');
+        elements.push(
+          <div key={`code-block-${i}`} className="my-3 rounded-lg overflow-hidden border border-slate-700/30 bg-slate-900 shadow-sm font-mono text-[12px]">
+            {codeLanguage && (
+              <div className="bg-slate-800 text-slate-450 px-4 py-1.5 text-[10px] font-bold border-b border-slate-700/50 uppercase select-none">
+                {codeLanguage}
+              </div>
+            )}
+            <pre className="p-4 overflow-x-auto text-slate-100 select-text whitespace-pre leading-normal">
+              <code>{codeText}</code>
+            </pre>
+          </div>
+        );
+        inCodeBlock = false;
+        codeBlockLines = [];
+        codeLanguage = '';
+      } else {
+        inCodeBlock = true;
+        codeLanguage = line.trim().slice(3).trim();
+      }
+      continue;
+    }
+    
+    if (inCodeBlock) {
+      codeBlockLines.push(line);
+      continue;
+    }
+    
+    const trimmedLine = line.trimStart();
+    const leadingSpaces = line.length - trimmedLine.length;
+    
+    // Check for blockquote
+    if (trimmedLine.startsWith('>')) {
+      const quoteText = trimmedLine.slice(1).trim();
+      elements.push(
+        <blockquote key={i} className="border-l-4 border-slate-300 pl-3 italic opacity-80 my-2 leading-relaxed text-[12.5px]">
+          {renderInlineFormatting(quoteText)}
+        </blockquote>
+      );
+      continue;
+    }
+    
+    // Check for lists (numbered, bullet, or asterisk)
+    const listMatch = trimmedLine.match(/^(\d+\.|\*|-|•)\s+(.*)/);
+    if (listMatch) {
+      const bullet = listMatch[1];
+      const rest = listMatch[2];
+      
+      const isUnordered = bullet === '*' || bullet === '-' || bullet === '•';
+      
+      if (isUnordered) {
+        elements.push(
+          <div 
+            key={i} 
+            className="flex items-start gap-2 my-1.5 leading-relaxed text-[12.5px]"
+            style={{ marginLeft: `${leadingSpaces > 0 ? (leadingSpaces * 8) + 16 : 16}px` }}
+          >
+            <span className="shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-current opacity-60" />
+            <span className="flex-1">{renderInlineFormatting(rest)}</span>
+          </div>
+        );
+      } else {
+        elements.push(
+          <div 
+            key={i} 
+            className="flex items-start gap-2 my-1.5 leading-relaxed text-[12.5px]"
+            style={{ marginLeft: `${leadingSpaces > 0 ? (leadingSpaces * 8) + 16 : 16}px` }}
+          >
+            <span className="font-semibold shrink-0 select-none min-w-[15px] opacity-80">{bullet}</span>
+            <span className="flex-1">{renderInlineFormatting(rest)}</span>
+          </div>
+        );
+      }
+      continue;
+    }
+    
+    // Handle horizontal line
+    if (trimmedLine === '---' || trimmedLine === '***' || trimmedLine === '___') {
+      elements.push(<hr key={i} className="my-4 border-t border-border/85" />);
+      continue;
+    }
+    
+    // Handle empty line spacing
+    if (line.trim() === '') {
+      elements.push(<div key={i} className="h-2" />);
+      continue;
+    }
+    
+    // Standard paragraph
+    elements.push(
+      <p key={i} className="my-1.5 leading-relaxed text-[12.5px]">
+        {renderInlineFormatting(line)}
+      </p>
+    );
+  }
+  
+  return elements;
+};
+
 export default function LegalAIChatbot() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -360,7 +514,7 @@ export default function LegalAIChatbot() {
                       ? `${msg.isError ? "bg-risk-red-light/50 border border-risk-red/20" : "bg-primary-50/70 border border-border"} text-primary rounded-tl-none` 
                       : "bg-primary text-white rounded-tr-none"
                   }`}>
-                    {msg.content}
+                    {renderFormattedContent(msg.content)}
                   </div>
                   <div className={`text-[10px] text-text-muted flex items-center gap-2 ${isAI ? "" : "justify-end"}`}>
                     <span>{msg.time}</span>
